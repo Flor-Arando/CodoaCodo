@@ -9,6 +9,7 @@
 .bg-total {
     background-color: #cce5ff;
     border: #b8daff;
+    font-family : Arial, Helvetica, sans-serif;
 }
 
 .row {
@@ -17,8 +18,8 @@
 
 .total {
   
-    margin: 30px;
-    font-size: 30px;
+    margin: 27px 1px 23px 1px;
+    font-size: 35px;
 }
 
 
