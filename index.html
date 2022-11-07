@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar tickets</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <script src="assets/js/tickets.js"></script>
+</head>
+
+<body>
+    <nav class="navbar bg-dark">
+        <div class="container-fluid ">
+            <a class="navbar-brand text-light" href="#">Conf Bs As</a>
+
+            <ul class="nav">
+                <li class="nav-item ">
+                    <a class="nav-link text-muted">La Conferencia</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-muted">Los oradores</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-muted">El lugar y la fecha</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" aria-current="page" href="#">Conviértete en orador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" aria-current="page" href="#">Comprar tickets</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+
+            <div class="container p-4">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <div class="card w-100 border border-primary rounded-0">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Estudiante</h3>
+                                <h6 class="card-subtitle mb-2">Tienen un descuento</h6>
+                                <p class="card-text">80%</p>
+                                <h6 class="card-subtitle mb-2 text-muted">* presentar documentación</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card w-100 border border-success rounded-0">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Trainee</h3>
+                                <h6 class="card-subtitle mb-2">Tienen un descuento</h6>
+                                <p class="card-text">50%</p>
+                                <h6 class="card-subtitle mb-2 text-muted">* presentar documentación</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card w-100 border border-warning rounded-0">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Junior</h3>
+                                <h6 class="card-subtitle mb-2">Tienen un descuento</h6>
+                                <p class="card-text">15%</p>
+                                <h6 class="card-subtitle mb-2 text-muted">* presentar documentación</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container p-4">
+                <div class="row text-center">
+                    <div class="col align-self-center ">
+                        <h2 class="display-6 fs-6 ">VENTA<span class="fs-1"
+                                style="display: block;">VENTA DEL TICKET $200</span></h2>
+
+                    </div>
+                </div>
+
+                <form id="formulario">
+                     <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+                        </div>
+                     </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="inputCorreo" placeholder="Correo">
+                        </div>                     
+                    </div>    
+                    
+                    <div class="row">
+                        <div class="col">
+                            Cantidad
+                            <input type="text" class="form-control" id="cantidad" placeholder="Cantidad">
+                        </div>
+                        <div class="col">
+                            Categoria
+                            <select id="categoria" class="form-select" aria-label="Categoria">
+                                <option value="0.8">Estudiante</option>
+                                <option value="0.5">Trainee</option>
+                                <option value="0.15">Junior</option>
+                            </select>
+                        </div>
+                    </div> 
+                 
+                    <div class="row total">
+                        <div class="col mb-2 bg-total text-dark rounded">
+                            Total a pagar: $<span id="totalPagar"></span>
+                        </div>
+                    </div>
+                
+                    <div class="row ">
+                        <div class="col">
+                            <button type="button" class="btn btn-success w-100 border-0" onclick="borrar()">Borrar</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-success w-100 border-0" onclick="resumen()">Resumen</button>
+                        </div>
+                    </div> 
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="nav bg-footer justify-content-center p-4">
+            <li class="nav-item ">
+                <a class="nav-link text-white" aria-current="page" href="#">Preguntas </br>frecuentes</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white">Contáctanos</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white">Prensa</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white">Conferencias</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white">Términos y </br>Condiciones</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white">Privacidad</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white">Estudiantes</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

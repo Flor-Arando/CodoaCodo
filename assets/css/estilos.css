@@ -1,0 +1,24 @@
+.bg-footer {
+    background-color: #263d4a;
+}
+
+.btn-success {
+    background-color: #97c93e;
+}
+
+.bg-total {
+    background-color: #cce5ff;
+    border: #b8daff;
+}
+
+.row {
+    padding-bottom: 25px;
+}
+
+.total {
+  
+    margin: 30px;
+    font-size: 30px;
+}
+
+
